@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sijax Example</title>
+
+    {{ g.sijax.get_js() }}
+
+    <script>
+        function sayHi() {
+            Sijax.request('say_hi');
+        }
+    </script>
+</head>
+<body>
+    <button onclick="sayHi()">Say Hi</button>
+</body>
+</html>
